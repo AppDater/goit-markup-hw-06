@@ -567,6 +567,10 @@ margin-bottom: 9px;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer_links{
+    margin-right: 93px;
+}
+
 .footer_links h3{
     font-weight: 700;
         font-size: 14px;
@@ -603,6 +607,30 @@ margin-bottom: 9px;
 .studio_link:hover,
 .studio_link:focus{
     background-color: var(--action_color);
+}
+
+.footer_form p{
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+
+.subs{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.subs_btn{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio{
