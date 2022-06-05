@@ -62,34 +62,44 @@
             <form class="modal_form">
                 <p>Оставьте свои данные, мы вам перезвоним</p>
                 <label class="input_field">
-                    <p>Имя</p> 
-                    <input type="name" name="name" class="input_area">
-                    <svg width="18" height="18" class="field_icon"> 
-                        <use href="./pictures/sprite/sprite.svg#icon-avatar"></use>
-                    </svg>
+                    <span>Имя</span> 
+                    <span class="area">
+                        <input type="text" name="name" class="input_area">
+                        <svg width="18" height="18" class="field_icon"> 
+                            <use href="./pictures/sprite/sprite.svg#icon-avatar"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="input_field" >
-                    <p>Телефон</p>
-                    <input type="tel" name="phone number" class="input_area">
-                    <svg width="18" height="18" class="field_icon"> 
-                        <use href="./pictures/sprite/sprite.svg#icon-phone"></use>
-                    </svg>
+                    <span>Телефон</span>
+                    <span class="area">
+                        <input type="tel" name="phone number" class="input_area">
+                        <svg width="18" height="18" class="field_icon"> 
+                            <use href="./pictures/sprite/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="input_field">
-                    <p>Почта</p>
-                    <input type="mail" name="mail" class="input_area">
-                    <svg width="18" height="18" class="field_icon">
-                        <use href="./pictures/sprite/sprite.svg#icon-mail"></use>
-                    </svg>
+                    <span>Почта</span>
+                    <span class="area">
+                        <input type="email" name="email" class="input_area">
+                        <svg width="18" height="18" class="field_icon">
+                            <use href="./pictures/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label class="input_field">
-                    <p>Комментарий</p>
-                    <textarea type="text" name="comment" placeholder="Введите текст" ></textarea>
+                <label class="textarea">
+                    <span>Комментарий</span>
+                    <textarea name="comment" placeholder="Введите текст" ></textarea>
                 </label>
                 <label class="policy">
                     <input type="checkbox" name="policy accept" class="stock_checkbox">
                     <span class="checkbox"> <svg width="16" height="15" class="checked"> <use href="./pictures/sprite/sprite.svg#icon-check"></use></svg></span>
-                    <p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+                    <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+                </label>
+                <label class="modal-form__submit">
+                    <input type="submit" value=" " class="submit_btn">
+                    <span class="submit_logo">Отправить</span>
                 </label>
             </form>
             </div>
@@ -349,18 +359,18 @@
         <form class="footer_form">
             <p>Подпишитесь на рассылку</p>
             <label class="subs">
-                <input type="mail" placeholder="E-mail" class="mail_input">
-                <button type="submit" class="subs_btn"> 
-                <p>Подписаться</p> 
-                <svg with="24px" height="24px" class="send_icon"> 
+                <input type="email" placeholder="E-mail" class="mail_input">
+            </label>
+            <button type="submit" class="subs_btn"> 
+                <span>Подписаться</span> 
+                <svg width="24px" height="24px" class="send_icon"> 
                     <use href="./pictures/sprite/sprite.svg#icon-icon-send"> 
                     </use>
                 </svg> 
                 </button>
-            </label>
         </form>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
-<script src="./js/modal.js"></script>
 </html>
